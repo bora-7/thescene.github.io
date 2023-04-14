@@ -1,8 +1,161 @@
 body {
-    margin: 40px auto;
-    max-width: 650px;
-    line-height: 1.6;
-    font-size: 18px;
-    color: #444;
-    padding: 0 10px;
+    background-color: #F5F5F5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Add this line to vertically align the midpoints */
+    margin: 5% 0% 5% 10%;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seeker-logo {
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+.subheader {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    /* Adjust this value to control the overall space taken by the buttons */
+    gap: 10px;
+    /* Adjust this value to control the space between the platform icons and buttons */
+}
+
+.download-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.platform-logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10%;
+    vertical-align: middle;
+    /* Add this line */
+}
+
+.platform-logo:hover {
+    opacity: 0.8;
+}
+
+.download-text {
+    display: flex;
+    align-items: center;
+    background-color: #555555;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Courier, monospace;
+    /* Set the font family to Courier */
+}
+
+.download-text:hover {
+    background-color: #444444;
+}
+
+.arrow-icon {
+    margin-right: 5px;
+}
+
+.right {
+    width: 50%;
+    margin-top: 5%;
+}
+
+.screenshot {
+    width: 100%;
+}
+
+.feather-download {
+    margin-right: 8px;
+}
+
+.subheader {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-family: Courier, monospace;
+    /* Set the font family to Courier */
+}
+
+.background-circles,
+.background-circles2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-circles::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+    width: 500px;
+    height: 500px;
+    bottom: 20%;
+    left: -25%;
+    background-color: #444444;
+}
+
+.background-circles::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+    width: 500px;
+    height: 500px;
+    bottom: -10%;
+    right: -10%;
+    background-color: #666666;
+}
+
+.background-circles2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+    width: 350px;
+    height: 350px;
+    top: -20%;
+    right: -20%;
+    background-color: #777777;
+    /* Adjust the shade as needed */
+}
+
+.windows {
+    width: 58px;
+    height: 58px;
 }
