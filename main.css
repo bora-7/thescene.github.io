@@ -110,8 +110,8 @@ body {
 .background-circles,
 .background-circles2 {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -121,10 +121,10 @@ body {
     position: absolute;
     border-radius: 50%;
     opacity: 0.7;
-    width: 500px;
-    height: 500px;
+    width: 40vw;
+    height: 40vw;
     bottom: 20%;
-    left: -25%;
+    left: -30vw;
     background-color: #444444;
 }
 
@@ -134,10 +134,10 @@ body {
     position: absolute;
     border-radius: 50%;
     opacity: 0.8;
-    width: 500px;
-    height: 500px;
+    width: 30vw;
+    height: 30vw;
     bottom: -10%;
-    right: -10%;
+    right: -10vw;
     background-color: #666666;
 }
 
@@ -147,10 +147,10 @@ body {
     position: absolute;
     border-radius: 50%;
     opacity: 0.7;
-    width: 350px;
-    height: 350px;
+    width: 27vw;
+    height: 27vw;
     top: -20%;
-    right: -20%;
+    right: -20vw;
     background-color: #777777;
     /* Adjust the shade as needed */
 }
