@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     /* Add this line to vertically align the midpoints */
-    margin: 5% 0% 5% 10%;
+    margin: 5% 10% 5% 10%;
 }
 
 .left {
