@@ -1,9 +1,14 @@
+@media (min-width: 769px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
 body {
     background-color: #F5F5F5;
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .container {
@@ -191,4 +196,39 @@ footer p a {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        /* Reverse the order of columns for smaller screens */
+    }
+
+    .left {
+        width: 100%;
+        margin-bottom: 2rem;
+        /* Take up the full width and add some space at the bottom */
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .background-circles,
+    .background-circles2 {
+        display: none;
+        /* Hide the circles for smaller screens */
+    }
+
+    .screenshot {
+        height: auto;
+        /* Adjust the height so that the image scales down */
+    }
+
+    footer {
+        position: static;
+        /* Remove fixed positioning for the footer /
+    margin-top: 2rem;
+    / Add some space at the top of the footer */
+    }
 }
