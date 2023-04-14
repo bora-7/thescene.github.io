@@ -159,3 +159,34 @@ body {
     width: 58px;
     height: 58px;
 }
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+footer nav a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer p a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
